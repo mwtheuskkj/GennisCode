@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GennisCode — cursos gratuitos de tecnologia, programação e suporte de TI.">
+  <title>GennisCode — Aprenda. Construa. Compartilhe.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" href="img/icon-site1.jpg">
+
+</head>
+<body>
+  <!-- Tela de abertura -->
+  <div class="splash-screen" id="splashScreen" aria-label="Carregando GennisCode">
+    <div class="splash-mark">玄</div>
+    <div class="splash-brand">GennisCode</div>
+    <div class="splash-line"></div>
+    <span>技術を共有する · tecnologia compartilhada</span>
+  </div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="GennisCode - início">
+        <span class="brand-symbol">玄</span>
+        <span>GennisCode</span>
+      </a>
+
+      <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="courseSearch" type="search" placeholder="Pesquisar cursos, linguagens, conteúdos..." autocomplete="off">
+        <select id="categoryFilter" aria-label="Filtrar cursos">
+          <option value="todos">Todos</option>
+          <option value="programacao">Programação</option>
+          <option value="web">Web</option>
+          <option value="dados">Banco de Dados</option>
+          <option value="suporte">Suporte de TI</option>
+          <option value="fundamentos">Fundamentos</option>
+        </select>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#comunidade">Comunidade</a>
+      </nav>
+
+      <button class="community-btn" id="communityBtn">
+        <i class="fa-solid fa-users"></i>
+        <span>Comunidade GennisCode</span>
+      </button>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <span class="eyebrow">玄 · ENTRADA PARA TECNOLOGIA</span>
+          <h1>Aprenda.<br>Construa.<br><span>Compartilhe.</span></h1>
+          <p>
+            Um ponto de partida para quem quer entrar em programação, dados,
+            suporte e tecnologia. Encontre cursos gratuitos, acompanhe sua
+            evolução e faça parte de uma comunidade de tecnologia.
+          </p>
+          <div class="hero-actions">
+            <a href="#cursos" class="btn btn-light">
+              Explorar trilhas <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline" id="heroCommunityBtn">
+              <i class="fa-solid fa-users"></i> Conhecer a comunidade
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="torii">
+            <span class="torii-top"></span>
+            <span class="torii-mid"></span>
+            <span class="torii-post left"></span>
+            <span class="torii-post right"></span>
+            <span class="torii-lower"></span>
+          </div>
+          <div class="bamboo bamboo-left"></div>
+          <div class="bamboo bamboo-right"></div>
+          <div class="jp-vertical">継続は力なり</div>
+          <div class="red-seal">玄</div>
+        </div>
+      </section>
+
+      <!-- 4 passos -->
+      <section class="steps-section">
+        <div class="step">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div><small>01</small><h3>Comece do zero</h3><p>Não importa seu nível, o importante é dar o primeiro passo.</p></div>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-laptop"></i>
+          <div><small>02</small><h3>Estude gratuitamente</h3><p>Acesse cursos e conteúdos 100% gratuitos e de qualidade.</p></div>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-user-group"></i>
+          <div><small>03</small><h3>Compartilhe conquistas</h3><p>Mostre seu progresso, tire dúvidas e ajude outras pessoas.</p></div>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-chart-column"></i>
+          <div><small>04</small><h3>Crie sua presença tech</h3><p>Construa seu perfil, conecte-se e faça parte do ecossistema.</p></div>
+        </div>
+      </section>
+
+      <!-- Cursos -->
+      <section class="courses-section" id="cursos">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">TRILHAS GRATUITAS</span>
+            <h2>Seu primeiro caminho em TI.</h2>
+          </div>
+          <span class="course-count" id="courseCount">7 cursos disponíveis</span>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="fa-solid fa-compass"></i>
+          <h3>Nenhum curso encontrado</h3>
+          <p>Tente outra palavra ou remova o filtro.</p>
+          <button class="btn btn-dark" id="clearFilters">Limpar filtros</button>
+        </div>
+      </section>
+
+      <!-- Comunidade -->
+      <section class="community-section" id="comunidade">
+        <div class="community-banner">
+          <div class="community-copy">
+            <span class="jp-small">仲間 · COMUNIDADE</span>
+            <h2>Não estude sozinho.</h2>
+            <p>
+              Publique seus projetos, comemore certificados, encontre pessoas
+              estudando tecnologias parecidas e troque experiências.
+            </p>
+            <button class="btn btn-light" id="communityBannerBtn">
+              Entrar na comunidade <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Ícones de linguagens no lugar dos comentários -->
+          <div class="tech-wall" aria-label="Tecnologias da GennisCode">
+            <div class="tech-icon" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="tech-icon" title="Java"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="tech-icon" title="HTML"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="tech-icon" title="CSS"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="tech-icon" title="JavaScript"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="tech-icon" title="Banco de Dados"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+            <div class="tech-icon" title="Suporte de TI"><i class="fa-solid fa-screwdriver-wrench"></i><span>TI</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre / ajuda -->
+      <section class="support-section">
+        <div class="support-card">
+          <div>
+            <span class="eyebrow">AJUDA</span>
+            <h2>Estamos construindo o suporte.</h2>
+            <p>
+              A área de suporte ao usuário ainda está em desenvolvimento.
+              Em breve teremos um canal dedicado para dúvidas, sugestões e
+              problemas relacionados à plataforma.
+            </p>
+          </div>
+          <button class="btn btn-outline dark-outline" id="helpBtn">
+            <i class="fa-regular fa-circle-question"></i> Saber mais
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand-symbol">玄</span>
+            <span>GennisCode</span>
+          </a>
+          <p>Tecnologia é melhor quando é compartilhada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <a href="#inicio">Início</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#comunidade">Comunidade</a>
+          <button class="footer-button" id="aboutBtn">Sobre nós</button>
+        </div>
+
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <button class="footer-button" id="termsBtn">Termos de uso</button>
+          <button class="footer-button" id="privacyBtn">Política de privacidade</button>
+          <button class="footer-button" id="footerHelpBtn">Ajuda</button>
+          <button class="footer-button" id="contactBtn">Contato</button>
+        </div>
+
+        <div class="footer-col socials">
+          <h4>Siga-nos</h4>
+          <div class="social-links">
+            <!-- Substitua os hrefs pelas redes oficiais do projeto -->
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-team">
+        <span>Projeto desenvolvido por</span>
+        <div class="team-list">
+          <span>Matheus Augusto Antunes Pentogennis</span>
+          <span>Gustavo Gabriel Naves Ferreira</span>
+          <span>João Victor Guimarães Gomes</span>
+          <span>Lucas Siqueira Teles</span>
+          <span>Lucas da Graça Leandro</span>
+          <span>Gabriel Gonçalves Lima</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 GennisCode. Todos os direitos reservados.</span>
+        <span>一歩ずつ、前へ — um passo de cada vez.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <span class="modal-tag" id="modalTag"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-learn">
+        <h3>O que você vai aprender</h3>
+        <ul id="modalTopics"></ul>
+      </div>
+      <div class="modal-source">
+        <span>Conteúdo disponibilizado por</span>
+        <strong id="modalSource"></strong>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline dark-outline" id="modalClose2">Fechar</button>
+        <a class="btn btn-dark" id="modalAccess" href="#" target="_blank" rel="noopener noreferrer">
+          Acessar curso <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
