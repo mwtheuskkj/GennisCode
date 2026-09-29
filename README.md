@@ -1,14 +1,71 @@
-# GennisCode
+⛩️ GennisCode (玄)
 
-Protótipo responsivo da plataforma GennisCode.
+"技術を共有する · Tecnologia compartilhada"
 
-## Arquivos
-- `index.html` — estrutura da página
-- `style.css` — layout, tema, responsividade e animações
-- `script.js` — cursos, pesquisa, filtros, modal, tema claro/escuro e interações
+Aprenda. Construa. Compartilhe.
 
-## Observações
-- Os ícones usam Font Awesome via CDN.
-- As fontes usam Google Fonts via CDN.
-- Os links das redes sociais estão como destinos genéricos e devem ser trocados pelos perfis oficiais da GennisCode.
-- Os links dos cursos apontam para plataformas externas e podem ser atualizados conforme a curadoria do projeto.
+O GennisCode é uma plataforma educacional aberta voltada para quem quer dar os primeiros passos na área de Tecnologia da Informação. Nosso objetivo é simplificar o acesso ao conhecimento através de trilhas gratuitas, auxílio no acompanhamento da evolução dos estudantes e incentivo à construção de comunidades.
+
+🔗 Link do Projeto
+
+O projeto está implantado e disponível para acesso em:
+👉 GennisCode - Vercel App
+
+📌 Funcionalidades Principais
+
+🎓 Trilhas de Aprendizado: Cursos focados em Programação, Desenvolvimento Web, Banco de Dados, Suporte de TI e Fundamentos.
+
+🔍 Filtro de Cursos: Busca e categorização rápida para encontrar o conteúdo ideal.
+
+🌐 Comunidade: Espaço focado na troca de experiências, publicação de projetos e celebração de conquistas.
+
+👥 Perfil Tech: Auxílio na construção de presença digital e portfólio para a entrada no mercado de TI.
+
+📱 Interface Responsiva e Temática: Visual moderno, intuitivo e com inspirações na cultura oriental tech.
+
+💻 Tecnologias Utilizadas
+
+Frontend: HTML5, CSS3, JavaScript (ES6+)
+
+Estilização & Fontes: Google Fonts
+
+Hospedagem & Deploy: Vercel
+
+Versionamento: Git & GitHub
+
+👥 Integrantes da Equipe
+
+Este projeto foi desenvolvido como trabalho acadêmico pelos alunos:
+
+Gabriel Gonçalves Lima
+
+Gustavo Gabriel Naves Ferreira
+
+João Victor Guimarães Gomes
+
+Lucas Siqueira Teles
+
+Lucas da Graça Leandro
+
+Matheus Augusto Antunes Pentogennis
+
+🚀 Como Executar o Projeto Localmente
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/gennis-code.git
+
+
+Acesse a pasta do projeto:
+
+cd gennis-code
+
+
+Abra o arquivo principal:
+Basta abrir o arquivo index.html em qualquer navegador ou utilizar uma extensão como o Live Server no VS Code.
+
+📄 Licença
+
+Este projeto é fruto de um trabalho universitário sem fins lucrativos.
+
+一歩ずつ、前へ — Um passo de cada vez.
