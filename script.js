@@ -8,7 +8,7 @@ const courses = [
     icon: '<i class="fa-brands fa-python"></i>',
     description: "Comece pela lógica e pelos fundamentos da linguagem Python em uma trilha introdutória, gratuita e pensada para quem está dando os primeiros passos.",
     topics: ["Sintaxe e estrutura básica", "Variáveis, tipos e operadores", "Condicionais e repetição", "Funções e primeiros exercícios"],
-    url: "https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico"
+    url: "https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0"
   },
   {
     id: "java",
