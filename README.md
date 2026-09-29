@@ -1,71 +1,75 @@
-⛩️ GennisCode (玄)
+# ⛩️ GennisCode (玄)
 
-"技術を共有する · Tecnologia compartilhada"
+> **"技術を共有する · Tecnologia compartilhada"**
+> 
+> *Aprenda. Construa. Compartilhe.*
 
-Aprenda. Construa. Compartilhe.
+O **GennisCode** é uma plataforma educacional aberta voltada para quem quer dar os primeiros passos na área de Tecnologia da Informação. Nosso objetivo é simplificar o acesso ao conhecimento através de trilhas gratuitas, auxílio no acompanhamento da evolução dos estudantes e incentivo à construção de comunidades.
 
-O GennisCode é uma plataforma educacional aberta voltada para quem quer dar os primeiros passos na área de Tecnologia da Informação. Nosso objetivo é simplificar o acesso ao conhecimento através de trilhas gratuitas, auxílio no acompanhamento da evolução dos estudantes e incentivo à construção de comunidades.
+---
 
-🔗 Link do Projeto
+## 🔗 Link do Projeto
 
 O projeto está implantado e disponível para acesso em:
-👉 GennisCode - Vercel App
+👉 **[GennisCode - Vercel App](https://gennis-code-stg7.vercel.app/)**
 
-📌 Funcionalidades Principais
+---
 
-🎓 Trilhas de Aprendizado: Cursos focados em Programação, Desenvolvimento Web, Banco de Dados, Suporte de TI e Fundamentos.
+## 📌 Funcionalidades Principais
 
-🔍 Filtro de Cursos: Busca e categorização rápida para encontrar o conteúdo ideal.
+- **🎓 Trilhas de Aprendizado:** Cursos focados em *Programação*, *Desenvolvimento Web*, *Banco de Dados*, *Suporte de TI* e *Fundamentos*.
+- **🔍 Filtro de Cursos:** Busca e categorização rápida para encontrar o conteúdo ideal.
+- **🌐 Comunidade:** Espaço focado na troca de experiências, publicação de projetos e celebração de conquistas.
+- **👥 Perfil Tech:** Auxílio na construção de presença digital e portfólio para a entrada no mercado de TI.
+- **📱 Interface Responsiva e Temática:** Visual moderno, intuitivo e com inspirações na cultura oriental tech.
 
-🌐 Comunidade: Espaço focado na troca de experiências, publicação de projetos e celebração de conquistas.
+---
 
-👥 Perfil Tech: Auxílio na construção de presença digital e portfólio para a entrada no mercado de TI.
+## 💻 Tecnologias Utilizadas
 
-📱 Interface Responsiva e Temática: Visual moderno, intuitivo e com inspirações na cultura oriental tech.
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Estilização & Fontes:** Google Fonts
+- **Hospedagem & Deploy:** [Vercel](https://vercel.com/)
+- **Versionamento:** Git & GitHub
 
-💻 Tecnologias Utilizadas
+---
 
-Frontend: HTML5, CSS3, JavaScript (ES6+)
-
-Estilização & Fontes: Google Fonts
-
-Hospedagem & Deploy: Vercel
-
-Versionamento: Git & GitHub
-
-👥 Integrantes da Equipe
+## 👥 Integrantes da Equipe
 
 Este projeto foi desenvolvido como trabalho acadêmico pelos alunos:
 
-Gabriel Gonçalves Lima
+- **Gabriel Gonçalves Lima**
+- **Gustavo Gabriel Naves Ferreira**
+- **João Victor Guimarães Gomes**
+- **Lucas Siqueira Teles**
+- **Lucas da Graça Leandro**
+- **Matheus Augusto Antunes Pentogennis**
 
-Gustavo Gabriel Naves Ferreira
+---
 
-João Victor Guimarães Gomes
+## 🚀 Como Executar o Projeto Localmente
 
-Lucas Siqueira Teles
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/gennis-code.git
+   ```
 
-Lucas da Graça Leandro
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd gennis-code
+   ```
 
-Matheus Augusto Antunes Pentogennis
+3. **Abra o arquivo principal:**
+   Basta abrir o arquivo `index.html` em qualquer navegador ou utilizar uma extensão como o *Live Server* no VS Code.
 
-🚀 Como Executar o Projeto Localmente
+---
 
-Clone o repositório:
+## 📄 Licença
 
-git clone https://github.com/seu-usuario/gennis-code.git
+Este projeto é fruto de um trabalho universitário sem fins lucrativos. 
 
+---
 
-Acesse a pasta do projeto:
-
-cd gennis-code
-
-
-Abra o arquivo principal:
-Basta abrir o arquivo index.html em qualquer navegador ou utilizar uma extensão como o Live Server no VS Code.
-
-📄 Licença
-
-Este projeto é fruto de um trabalho universitário sem fins lucrativos.
-
-一歩ずつ、前へ — Um passo de cada vez.
+<p align="center">
+  <i>一歩ずつ、前へ — Um passo de cada vez.</i>
+</p>
