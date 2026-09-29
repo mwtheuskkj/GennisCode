@@ -38,12 +38,12 @@ O projeto está implantado e disponível para acesso em:
 
 Este projeto foi desenvolvido como trabalho acadêmico pelos alunos:
 
-- **Gabriel Gonçalves Lima**
+- **Matheus Augusto Antunes Pentogennis**
 - **Gustavo Gabriel Naves Ferreira**
+- **Gabriel Gonçalves Lima**
 - **João Victor Guimarães Gomes**
 - **Lucas Siqueira Teles**
 - **Lucas da Graça Leandro**
-- **Matheus Augusto Antunes Pentogennis**
 
 ---
 
