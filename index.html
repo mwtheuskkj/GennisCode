@@ -130,6 +130,14 @@
             <span class="eyebrow">TRILHAS GRATUITAS</span>
             <h2>Seu primeiro caminho em TI.</h2>
           </div>
+          <div class="trail-tabs" role="tablist" aria-label="Trilhas da GennisCode">
+            <button class="trail-tab active" id="coursesTrailBtn" type="button" role="tab" aria-selected="true">
+              <i class="fa-solid fa-graduation-cap"></i> Cursos
+            </button>
+            <button class="trail-tab" id="resumeTrailBtn" type="button" role="tab" aria-selected="false">
+              <i class="fa-solid fa-file-lines"></i> Turbine o seu Currículo
+            </button>
+          </div>
           <span class="course-count" id="courseCount">7 cursos disponíveis</span>
         </div>
 
@@ -213,6 +221,7 @@
           <button class="footer-button" id="privacyBtn">Política de privacidade</button>
           <button class="footer-button" id="footerHelpBtn">Ajuda</button>
           <button class="footer-button" id="contactBtn">Contato</button>
+          <a class="footer-email" href="https://mail.google.com/mail/?view=cm&fs=1&to=genniscode@gmail.com" target="_blank" rel="noopener noreferrer">E-mail: genniscode@gmail.com</a>
         </div>
 
         <div class="footer-col socials">
@@ -228,13 +237,31 @@
 
       <div class="footer-team">
         <span>Projeto desenvolvido por</span>
-        <div class="team-list">
-          <span>Matheus Augusto Antunes Pentogennis</span>
-          <span>Gustavo Gabriel Naves Ferreira</span>
-          <span>João Victor Guimarães Gomes</span>
-          <span>Lucas Siqueira Teles</span>
-          <span>Lucas da Graça Leandro</span>
-          <span>Gabriel Gonçalves Lima</span>
+        <div class="team-carousel" aria-label="Colaboradores da GennisCode">
+          <button class="team-card" type="button" data-profile="matheus">
+            <img src="https://github.com/mwtheuskkj.png?size=96" alt="Perfil de Matheus Pentogennis" loading="eager" decoding="async">
+            <span><strong>Matheus Pentogennis</strong><small>Fundador</small></span>
+          </button>
+          <button class="team-card" type="button" data-profile="gustavo">
+            <img src="https://github.com/Massarubash.png?size=96" alt="Perfil de Gustavo Naves" loading="eager" decoding="async">
+            <span><strong>Gustavo Naves</strong><small>Co-Fundador</small></span>
+          </button>
+          <button class="team-card" type="button" data-profile="joao">
+            <img src="https://github.com/jaobom006.png?size=96" alt="Perfil de João Guimarães" loading="eager" decoding="async">
+            <span><strong>João Guimarães</strong><small>Co-Fundador</small></span>
+          </button>
+          <button class="team-card" type="button" data-profile="lucas">
+            <img src="https://github.com/Luucasy.png?size=96" alt="Perfil de Lucas Teles" loading="eager" decoding="async">
+            <span><strong>Lucas Teles</strong><small>Co-Fundador</small></span>
+          </button>
+          <button class="team-card" type="button" data-profile="gabriel">
+            <img src="https://github.com/midasrei68-dev.png?size=96" alt="Perfil de Gabriel Gonçalves" loading="eager" decoding="async">
+            <span><strong>Gabriel Gonçalves</strong><small>Co-Fundador</small></span>
+          </button>
+          <button class="team-card" type="button" data-profile="gabrielgraca">
+            <img src="https://github.com/CarlinhosDoPaoComMortadela.png?size=96" alt="Perfil de Gabriel da Graça" loading="eager" decoding="async">
+            <span><strong>Gabriel da Graça</strong><small>Co-Fundador</small></span>
+          </button>
         </div>
       </div>
 
@@ -245,6 +272,109 @@
     </footer>
   </div>
 
+  <!-- Tela de curso -->
+  <div class="course-view" id="courseView" hidden aria-hidden="true">
+    <div class="course-transition" id="courseTransition" aria-hidden="true">
+      <div class="course-transition-mark" id="courseTransitionIcon"></div>
+      <div class="course-transition-brand">GennisCode</div>
+      <div class="course-transition-line"></div>
+      <div class="course-transition-course" id="courseTransitionTitle"></div>
+    </div>
+
+    <header class="course-topbar">
+      <button class="course-back" id="courseBack" type="button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Voltar para cursos</span>
+      </button>
+      <div class="course-brand">
+        <span class="brand-symbol">玄</span>
+        <span>GennisCode</span>
+      </div>
+      <button class="theme-toggle course-theme-toggle" id="courseThemeToggle" type="button" aria-label="Ativar modo claro" title="Alternar tema">
+        <i class="fa-solid fa-moon" id="courseThemeIcon"></i>
+      </button>
+    </header>
+
+    <main class="course-page">
+      <section class="course-layout" aria-labelledby="coursePageTitle">
+        <div class="course-information">
+          <span class="course-page-eyebrow">GENNISCODE · TRILHA DE APRENDIZADO</span>
+          <div class="course-page-icon" id="coursePageIcon"></div>
+          <span class="course-page-meta" id="coursePageMeta"></span>
+          <h1 id="coursePageTitle"></h1>
+          <p class="course-page-description" id="coursePageDescription"></p>
+
+          <div class="course-fundamentals">
+            <div class="course-block-heading">
+              <span>01</span>
+              <h2>Fundamentos</h2>
+            </div>
+            <ul id="coursePageTopics"></ul>
+          </div>
+
+          <div class="course-signature">
+            <span>玄</span>
+            <div>
+              <strong>GennisCode</strong>
+              <small>Tecnologia é melhor quando é compartilhada.</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="course-lessons">
+          <div class="lessons-heading">
+            <span class="course-page-eyebrow">CONTEÚDO</span>
+            <h2>Aulas</h2>
+            <p>Escolha uma etapa para continuar seus estudos.</p>
+          </div>
+          <div class="lesson-list" id="lessonList"></div>
+          <div class="course-source-card">
+            <span>CONTEÚDO DISPONIBILIZADO POR</span>
+            <strong id="coursePageSource"></strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="course-review-section" id="courseReview">
+        <div class="review-heading">
+          <div>
+            <span class="course-page-eyebrow">SUA EXPERIÊNCIA</span>
+            <h2>Avalie este curso</h2>
+            <p>Deixe uma avaliação e um comentário. A avaliação é armazenada localmente neste navegador.</p>
+          </div>
+          <button class="btn btn-outline" id="reviewToggle" type="button">
+            <i class="fa-regular fa-star"></i> Avaliar curso
+          </button>
+        </div>
+
+        <form class="review-form" id="reviewForm" hidden>
+          <div class="rating-area">
+            <span>Sua nota</span>
+            <div class="star-rating" id="starRating" role="radiogroup" aria-label="Escolha uma nota de 1 a 5 estrelas">
+              <button type="button" class="star-button" data-rating="1" aria-label="1 estrela"><i class="fa-regular fa-star"></i></button>
+              <button type="button" class="star-button" data-rating="2" aria-label="2 estrelas"><i class="fa-regular fa-star"></i></button>
+              <button type="button" class="star-button" data-rating="3" aria-label="3 estrelas"><i class="fa-regular fa-star"></i></button>
+              <button type="button" class="star-button" data-rating="4" aria-label="4 estrelas"><i class="fa-regular fa-star"></i></button>
+              <button type="button" class="star-button" data-rating="5" aria-label="5 estrelas"><i class="fa-regular fa-star"></i></button>
+            </div>
+            <small id="ratingLabel">Escolha uma nota</small>
+          </div>
+          <label class="review-field">
+            <span>Comentário</span>
+            <textarea id="reviewComment" rows="4" maxlength="500" placeholder="Conte como foi sua experiência com o curso..."></textarea>
+          </label>
+          <div class="review-actions">
+            <button class="btn btn-outline dark-outline" id="reviewCancel" type="button">Cancelar</button>
+            <button class="btn btn-dark" type="submit">Enviar avaliação <i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <p class="review-status" id="reviewStatus" role="status"></p>
+        </form>
+
+        <div class="review-summary" id="reviewSummary"></div>
+      </section>
+    </main>
+  </div>
+
   <!-- Modal -->
   <div class="modal-backdrop" id="modalBackdrop" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -253,6 +383,7 @@
       <span class="modal-tag" id="modalTag"></span>
       <h2 id="modalTitle"></h2>
       <p id="modalDescription"></p>
+      <div class="modal-status" id="modalStatus" hidden>Em breve</div>
       <div class="modal-learn">
         <h3>O que você vai aprender</h3>
         <ul id="modalTopics"></ul>
@@ -261,12 +392,29 @@
         <span>Conteúdo disponibilizado por</span>
         <strong id="modalSource"></strong>
       </div>
+      <div class="modal-question">Deseja acessar o curso?</div>
       <div class="modal-actions">
-        <button class="btn btn-outline dark-outline" id="modalClose2">Fechar</button>
-        <a class="btn btn-dark" id="modalAccess" href="#" target="_blank" rel="noopener noreferrer">
-          Acessar curso <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+        <button class="btn btn-outline dark-outline" id="modalClose2" type="button">Não</button>
+        <button class="btn btn-dark" id="modalAccess" type="button">
+          Sim <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal de perfil dos colaboradores -->
+  <div class="profile-modal-backdrop" id="profileModalBackdrop" hidden>
+    <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+      <button class="profile-modal-close" id="profileModalClose" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img class="profile-modal-avatar" id="profileModalAvatar" src="" alt="">
+      <span class="modal-tag" id="profileModalRole"></span>
+      <h2 id="profileModalTitle"></h2>
+      <p id="profileModalBio"></p>
+      <a class="btn btn-outline profile-github" id="profileModalGithub" href="" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i> Ver GitHub
+      </a>
     </div>
   </div>
 
