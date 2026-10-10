@@ -540,7 +540,7 @@ const teamProfiles = {
     github: "https://github.com/midasrei68-dev",
     avatar: "https://github.com/midasrei68-dev.png?size=160"
   },
-  gabrielgraca: {
+  lucasgraca: {
     name: "Lucas da Graça",
     role: "Co-Fundador",
     bio: "Está na faculdade de Análise e Desenvolvimento de Sistemas na Instituição Braz Cubas.",
