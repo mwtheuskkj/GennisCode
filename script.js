@@ -545,7 +545,7 @@ const teamProfiles = {
     role: "Co-Fundador",
     bio: "Está na faculdade de Análise e Desenvolvimento de Sistemas na Instituição Braz Cubas.",
     github: "https://github.com/lucasgracaleandro-arch",
-    avatar: "https://github.com/CarlinhosDoPaoComMortadela.png?size=160"
+    avatar: "https://github.com/lucasgracaleandro-arch.png?size=160"
   }
 };
 
