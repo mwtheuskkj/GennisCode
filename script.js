@@ -544,7 +544,7 @@ const teamProfiles = {
     name: "Lucas da Graça",
     role: "Co-Fundador",
     bio: "Está na faculdade de Análise e Desenvolvimento de Sistemas na Instituição Braz Cubas.",
-    github: "https://github.com/CarlinhosDoPaoComMortadela",
+    github: "https://github.com/lucasgracaleandro-arch",
     avatar: "https://github.com/CarlinhosDoPaoComMortadela.png?size=160"
   }
 };
