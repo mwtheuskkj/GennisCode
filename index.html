@@ -165,7 +165,6 @@
             </button>
           </div>
 
-          <!-- Ícones de linguagens no lugar dos comentários -->
           <div class="tech-wall" aria-label="Tecnologias da GennisCode">
             <div class="tech-icon" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
             <div class="tech-icon" title="Java"><i class="fa-brands fa-java"></i><span>Java</span></div>
@@ -227,7 +226,6 @@
         <div class="footer-col socials">
           <h4>Siga-nos</h4>
           <div class="social-links">
-            <!-- Substitua os hrefs pelas redes oficiais do projeto -->
             <a href="https://www.youtube.com/@genniscode" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -237,31 +235,59 @@
 
       <div class="footer-team">
         <span>Projeto desenvolvido por</span>
-        <div class="team-carousel" aria-label="Colaboradores da GennisCode">
-          <button class="team-card" type="button" data-profile="matheus">
-            <img src="https://github.com/mwtheuskkj.png?size=96" alt="Perfil de Matheus Pentogennis" loading="eager" decoding="async">
-            <span><strong>Matheus Pentogennis</strong><small>Fundador</small></span>
-          </button>
-          <button class="team-card" type="button" data-profile="gustavo">
-            <img src="https://github.com/Massarubash.png?size=96" alt="Perfil de Gustavo Naves" loading="eager" decoding="async">
-            <span><strong>Gustavo Naves</strong><small>Co-Fundador</small></span>
-          </button>
-          <button class="team-card" type="button" data-profile="joao">
-            <img src="https://github.com/jaobom006.png?size=96" alt="Perfil de João Guimarães" loading="eager" decoding="async">
-            <span><strong>João Guimarães</strong><small>Co-Fundador</small></span>
-          </button>
-          <button class="team-card" type="button" data-profile="lucas">
-            <img src="https://github.com/Luucasy.png?size=96" alt="Perfil de Lucas Teles" loading="eager" decoding="async">
-            <span><strong>Lucas Teles</strong><small>Co-Fundador</small></span>
-          </button>
-          <button class="team-card" type="button" data-profile="gabriel">
-            <img src="https://github.com/midasrei68-dev.png?size=96" alt="Perfil de Gabriel Gonçalves" loading="eager" decoding="async">
-            <span><strong>Gabriel Gonçalves</strong><small>Co-Fundador</small></span>
-          </button>
-          <button class="team-card" type="button" data-profile="lucasgraca">
-            <img src="https://github.com/lucasgracaleandro-arch.png?size=160" alt="Perfil de Lucas da Graça" loading="eager" decoding="async">
-            <span><strong>Lucas da Graça</strong><small>Co-Fundador</small></span>
-          </button>
+        <div class="team-carousel-wrapper">
+          <div class="team-carousel" aria-label="Colaboradores da GennisCode">
+            <button class="team-card" type="button" data-profile="matheus">
+              <img src="https://github.com/mwtheuskkj.png?size=96" alt="Perfil de Matheus Pentogennis" loading="eager" decoding="async">
+              <span><strong>Matheus Pentogennis</strong><small>Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="gustavo">
+              <img src="https://github.com/Massarubash.png?size=96" alt="Perfil de Gustavo Naves" loading="eager" decoding="async">
+              <span><strong>Gustavo Naves</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="joao">
+              <img src="https://github.com/jaobom006.png?size=96" alt="Perfil de João Guimarães" loading="eager" decoding="async">
+              <span><strong>João Guimarães</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="lucas">
+              <img src="https://github.com/Luucasy.png?size=96" alt="Perfil de Lucas Teles" loading="eager" decoding="async">
+              <span><strong>Lucas Teles</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="gabriel">
+              <img src="https://github.com/midasrei68-dev.png?size=96" alt="Perfil de Gabriel Gonçalves" loading="eager" decoding="async">
+              <span><strong>Gabriel Gonçalves</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="lucasgraca">
+              <img src="https://github.com/lucasgracaleandro-arch.png?size=160" alt="Perfil de Lucas da Graça" loading="eager" decoding="async">
+              <span><strong>Lucas da Graça</strong><small>Co-Fundador</small></span>
+            </button>
+
+            <!-- Duplicado para loop infinito suave -->
+            <button class="team-card" type="button" data-profile="matheus" aria-hidden="true">
+              <img src="https://github.com/mwtheuskkj.png?size=96" alt="" loading="eager" decoding="async">
+              <span><strong>Matheus Pentogennis</strong><small>Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="gustavo" aria-hidden="true">
+              <img src="https://github.com/Massarubash.png?size=96" alt="" loading="eager" decoding="async">
+              <span><strong>Gustavo Naves</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="joao" aria-hidden="true">
+              <img src="https://github.com/jaobom006.png?size=96" alt="" loading="eager" decoding="async">
+              <span><strong>João Guimarães</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="lucas" aria-hidden="true">
+              <img src="https://github.com/Luucasy.png?size=96" alt="" loading="eager" decoding="async">
+              <span><strong>Lucas Teles</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="gabriel" aria-hidden="true">
+              <img src="https://github.com/midasrei68-dev.png?size=96" alt="" loading="eager" decoding="async">
+              <span><strong>Gabriel Gonçalves</strong><small>Co-Fundador</small></span>
+            </button>
+            <button class="team-card" type="button" data-profile="lucasgraca" aria-hidden="true">
+              <img src="https://github.com/lucasgracaleandro-arch.png?size=160" alt="" loading="eager" decoding="async">
+              <span><strong>Lucas da Graça</strong><small>Co-Fundador</small></span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -375,7 +401,91 @@
     </main>
   </div>
 
-  <!-- Modal -->
+  <!-- Tela Dedicada da Aba Currículos (Idêntica à página de detalhes de Cursos) -->
+  <div class="course-view" id="resumeView" hidden aria-hidden="true">
+    <div class="course-transition" id="resumeTransition" aria-hidden="true">
+      <div class="course-transition-mark"><i class="fa-solid fa-file-lines"></i></div>
+      <div class="course-transition-brand">GennisCode</div>
+      <div class="course-transition-line"></div>
+      <div class="course-transition-course">Currículos</div>
+    </div>
+
+    <header class="course-topbar">
+      <button class="course-back" id="resumeBack" type="button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Voltar para cursos</span>
+      </button>
+      <div class="course-brand">
+        <span class="brand-symbol">玄</span>
+        <span>GennisCode</span>
+      </div>
+      <button class="theme-toggle course-theme-toggle" id="resumeThemeToggle" type="button" aria-label="Ativar modo claro" title="Alternar tema">
+        <i class="fa-solid fa-moon" id="resumeThemeIcon"></i>
+      </button>
+    </header>
+
+    <main class="course-page">
+      <section class="course-layout" aria-labelledby="resumePageTitle">
+        <div class="course-information">
+          <span class="course-page-eyebrow">GENNISCODE · TURBINE O SEU CURRÍCULO</span>
+          <div class="course-page-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <span class="course-page-meta">DOCX · MODELOS PROFISSIONAIS DE T.I</span>
+          <h1 id="resumePageTitle">Modelos de Currículo</h1>
+          <p class="course-page-description">
+            Estes modelos foram desenvolvidos com foco em ajudar profissionais iniciantes e em transição na área de Tecnologia.
+            Possuem <strong>compatibilidade garantida com sistemas de IA e softwares ATS de RH</strong>, garantindo que o seu currículo passe pelas triagens automáticas e chegue diretamente às mãos do analista sem bloqueios.
+          </p>
+
+          <div class="course-fundamentals">
+            <div class="course-block-heading">
+              <span>01</span>
+              <h2>Fundamentos de ATS e IA</h2>
+            </div>
+            <ul>
+              <li>Estrutura limpa sem colunas complexas ou tabelas</li>
+              <li>Palavras-chave otimizadas para vagas de T.I</li>
+              <li>Seções claras para projetos e portfólio</li>
+              <li>Aprovado por recrutadores e robôs de triagem</li>
+            </ul>
+          </div>
+
+          <div class="course-signature">
+            <span>玄</span>
+            <div>
+              <strong>GennisCode</strong>
+              <small>Tecnologia é melhor quando é compartilhada.</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="course-lessons">
+          <div class="lessons-heading">
+            <span class="course-page-eyebrow">ESCOLHA O MODELO</span>
+            <h2>Modelos</h2>
+            <p>Selecione um modelo para visualizar os detalhes e baixar.</p>
+          </div>
+          <div class="lesson-list">
+            <button class="lesson-link resume-lesson-trigger" type="button" data-resume="junior" style="width:100%; text-align:left; border:0; background:var(--surface); cursor:pointer;">
+              <span class="lesson-number">01</span>
+              <span class="lesson-copy"><strong style="color: #ffffff;">Currículo para Iniciante / Júnior</strong><small>Ideal para transição de carreira e primeiros passos</small></span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+            <button class="lesson-link resume-lesson-trigger" type="button" data-resume="pleno" style="width:100%; text-align:left; border:0; background:var(--surface); cursor:pointer;">
+              <span class="lesson-number">02</span>
+              <span class="lesson-copy"><strong style="color: #ffffff;">Currículo para Experiente / Pleno</strong><small>Focado em impacto, métricas e histórico técnico</small></span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+          <div class="course-source-card">
+            <span>CONTEÚDO DISPONIBILIZADO POR</span>
+            <strong>GennisCode</strong>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal do Curso -->
   <div class="modal-backdrop" id="modalBackdrop" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" id="modalClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
@@ -398,6 +508,81 @@
         <button class="btn btn-dark" id="modalAccess" type="button">
           Sim <i class="fa-solid fa-arrow-right"></i>
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop-up Questionando Acesso à Aba Turbine o seu Currículo (Idêntico ao padrão de cursos) -->
+  <div class="modal-backdrop" id="resumeAccessModalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="resumeAccessTitle">
+      <button class="modal-close" id="resumeAccessClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-icon"><i class="fa-solid fa-file-lines"></i></div>
+      <span class="modal-tag">DOCX · TURBINE O SEU CURRÍCULO</span>
+      <h2 id="resumeAccessTitle">Turbine o seu Currículo — Modelos T.I</h2>
+      <p>Acesse modelos de currículos profissionais focados em ajudar profissionais iniciantes de T.I, com compatibilidade garantida com sistemas de IA e ATS de RH para que seu currículo chegue ao analista sem dificuldades.</p>
+      <div class="modal-learn">
+        <h3>O que você vai encontrar</h3>
+        <ul>
+          <li>Modelo para Iniciante / Júnior / Estágio</li>
+          <li>Modelo para Experiente / Pleno / Especialista</li>
+          <li>Compatibilidade garantida com sistemas de IA e ATS</li>
+          <li>Download automático direto no dispositivo</li>
+        </ul>
+      </div>
+      <div class="modal-source">
+        <span>Conteúdo disponibilizado por</span>
+        <strong>GennisCode</strong>
+      </div>
+      <div class="modal-question">Deseja acessar esta página?</div>
+      <div class="modal-actions">
+        <button class="btn btn-outline dark-outline" id="resumeAccessNo" type="button">Não</button>
+        <button class="btn btn-dark" id="resumeAccessYes" type="button">
+          Sim <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop-up Ampliado e Detalhado de Prévia e Download do Currículo -->
+  <div class="modal-backdrop" id="resumePreviewModalBackdrop" hidden>
+    <div class="modal resume-preview-modal-wide" role="dialog" aria-modal="true" aria-labelledby="resumePreviewTitle">
+      <button class="modal-close" id="resumePreviewClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-icon" id="resumePreviewIcon"><i class="fa-solid fa-file-word"></i></div>
+      <span class="modal-tag" id="resumePreviewTag">MODELO DE CURRÍCULO</span>
+      <h2 id="resumePreviewTitle"></h2>
+      
+      <div class="resume-preview-body">
+        <div class="resume-preview-box">
+          <div class="resume-sheet" id="resumePreviewSheet">
+            <!-- Prévia detalhada -->
+          </div>
+        </div>
+        
+        <div class="resume-preview-info">
+          <h3>Para que serve este modelo?</h3>
+          <p id="resumePreviewUsage"></p>
+          
+          <div class="modal-learn" style="margin-top: 14px; padding: 16px;">
+            <h3>Destaques do Modelo</h3>
+            <ul id="resumePreviewFeatures">
+              <li>Compatível com robôs leitores de RH (ATS).</li>
+              <li>Formatação em seções limpas.</li>
+              <li>Pronto para preencher no Word ou Google Docs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-source" style="margin-top: 18px;">
+        <span>CONTEÚDO DISPONIBILIZADO POR</span>
+        <strong>GennisCode</strong>
+      </div>
+
+      <div class="modal-actions" style="margin-top: 18px;">
+        <button class="btn btn-outline dark-outline" id="resumePreviewCloseBtn" type="button">Fechar</button>
+        <a class="btn btn-dark" id="resumeDownloadBtn" download href="#">
+          <i class="fa-solid fa-download"></i> Baixar Currículo (.docx)
+        </a>
       </div>
     </div>
   </div>
