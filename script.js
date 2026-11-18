@@ -120,6 +120,57 @@ const courses = [
   }
 ];
 
+const resumesData = {
+  junior: {
+    id: "junior",
+    title: "Currículo para Iniciante / Júnior",
+    tag: "INICIANTE / JÚNIOR / ESTÁGIO",
+    icon: '<i class="fa-solid fa-user-graduate"></i>',
+    file: "Curriculo_Tecnologia_Iniciante_GennisCode.docx",
+    usage: "Este modelo foi estruturado para destacar projetos práticos de estudo, cursos realizados na GennisCode e competências técnicas, mesmo para quem possui pouca ou nenhuma experiência profissional prévia na área.",
+    features: [
+      "Sessão de Projetos e Portfólio em destaque no topo",
+      "Formatado com seções legíveis por IAs e sistemas ATS de RH",
+      "Inclusão estruturada de cursos, certificações e soft skills"
+    ],
+    previewHtml: `
+      <h4 style="margin:0 0 4px; font-size:0.9rem;">[SEU NOME COMPLETO]</h4>
+      <p style="font-weight:600; font-size:0.7rem; color:var(--text); margin:0 0 8px;">Desenvolvedor(a) Front-End / Back-End / Suporte de T.I (Júnior / Estágio)</p>
+      <p style="margin:0 0 4px; font-size:0.65rem;">Cidade, Estado | (00) 99999-9999 | seuemail@gmail.com</p>
+      <p style="margin:0 0 10px; font-size:0.65rem;">LinkedIn: linkedin.com/in/seu-perfil | GitHub: github.com/seu-usuario</p>
+      <hr style="border:0; border-top:1px solid var(--line); margin:8px 0;">
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>RESUMO PROFISSIONAL:</strong> Profissional em transição/início de carreira na área de Tecnologia, focado em desenvolvimento de software e suporte técnico. Conhecimento prático em HTML, CSS, JavaScript, React, Python e redes.</p>
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>COMPETÊNCIAS TÉCNICAS:</strong> JavaScript, TypeScript, Python, HTML5, CSS3, React.js, Git, GitHub, Redes TCP/IP e Suporte de T.I.</p>
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>PROJETOS EM DESTAQUE:</strong> Sistema de Gestão de Chamados (React, Node.js) e automação de rotinas em Python.</p>
+      <p style="margin:0; font-size:0.68rem;"><strong>FORMAÇÃO:</strong> Análise e Desenvolvimento de Sistemas | Trilha GennisCode.</p>
+    `
+  },
+  pleno: {
+    id: "pleno",
+    title: "Currículo para Experiente / Pleno",
+    tag: "EXPERIENTE / PLENO / ESPECIALISTA",
+    icon: '<i class="fa-solid fa-briefcase"></i>',
+    file: "Curriculo_Tecnologia_Pleno_Experiente_GennisCode.docx",
+    usage: "Projetado para profissionais com experiência de mercado, focando na apresentação de métricas de impacto, liderança técnica, arquitetura de sistemas e conquistas em empresas anteriores.",
+    features: [
+      "Ênfase em histórico profissional detalhado e resultados mensuráveis",
+      "Estrutura otimizada para rápida triagem por recrutadores",
+      "Compatibilidade garantida com algoritmos ATS"
+    ],
+    previewHtml: `
+      <h4 style="margin:0 0 4px; font-size:0.9rem;">[SEU NOME COMPLETO]</h4>
+      <p style="font-weight:600; font-size:0.7rem; color:var(--text); margin:0 0 8px;">Desenvolvedor Full Stack / Especialista T.I</p>
+      <p style="margin:0 0 4px; font-size:0.65rem;">São Paulo, SP | (11) 98765-4321 | email@genniscode.com</p>
+      <p style="margin:0 0 10px; font-size:0.65rem;">LinkedIn: linkedin.com/in/seu-perfil | GitHub: github.com/seu-github</p>
+      <hr style="border:0; border-top:1px solid var(--line); margin:8px 0;">
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>RESUMO PROFISSIONAL:</strong> Desenvolvedor Software Full Stack com mais de 3 anos de experiência no desenvolvimento, manutenção e otimização de aplicações web escaláveis e infraestrutura de T.I.</p>
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>HARD SKILLS:</strong> JavaScript/TypeScript, React, Next.js, Node.js, Python, PostgreSQL, Docker, AWS, Redes & Segurança.</p>
+      <p style="margin:0 0 8px; font-size:0.68rem;"><strong>EXPERIÊNCIA:</strong> Desenvolvedor Full Stack Pleno (Tech Solutions) - Liderança de microsserviços, redução de 35% no tempo de carregamento e testes automatizados.</p>
+      <p style="margin:0; font-size:0.68rem;"><strong>CERTIFICAÇÕES:</strong> AWS Certified Developer, CompTIA Security+, Trilha Avançada GennisCode.</p>
+    `
+  }
+};
+
 const els = {
   grid: document.getElementById("courseGrid"),
   search: document.getElementById("courseSearch"),
@@ -170,11 +221,37 @@ const els = {
   profileModalRole: document.getElementById("profileModalRole"),
   profileModalTitle: document.getElementById("profileModalTitle"),
   profileModalBio: document.getElementById("profileModalBio"),
-  profileModalGithub: document.getElementById("profileModalGithub")
+  profileModalGithub: document.getElementById("profileModalGithub"),
+  
+  // Elementos do Currículo
+  resumeAccessModal: document.getElementById("resumeAccessModalBackdrop"),
+  resumeAccessClose: document.getElementById("resumeAccessClose"),
+  resumeAccessYes: document.getElementById("resumeAccessYes"),
+  resumeAccessNo: document.getElementById("resumeAccessNo"),
+  resumeView: document.getElementById("resumeView"),
+  resumeBack: document.getElementById("resumeBack"),
+  resumeTheme: document.getElementById("resumeThemeToggle"),
+  resumeThemeIcon: document.getElementById("resumeThemeIcon"),
+  resumeTransition: document.getElementById("resumeTransition"),
+  resumePreviewModal: document.getElementById("resumePreviewModalBackdrop"),
+  resumePreviewClose: document.getElementById("resumePreviewClose"),
+  resumePreviewCloseBtn: document.getElementById("resumePreviewCloseBtn"),
+  resumePreviewTitle: document.getElementById("resumePreviewTitle"),
+  resumePreviewTag: document.getElementById("resumePreviewTag"),
+  resumePreviewUsage: document.getElementById("resumePreviewUsage"),
+  resumePreviewSheet: document.getElementById("resumePreviewSheet"),
+  resumePreviewFeatures: document.getElementById("resumePreviewFeatures"),
+  resumeDownloadBtn: document.getElementById("resumeDownloadBtn")
 };
 
 let activeCourseId = null;
 let selectedRating = 0;
+
+// Função utilitária para desbloquear obrigatoriamente a rolagem do site
+function resetScrollState() {
+  document.body.classList.remove("modal-open", "course-open");
+  document.body.style.overflow = "";
+}
 
 function renderCourses(list = courses) {
   els.grid.innerHTML = list.map(course => `
@@ -207,7 +284,11 @@ function filterCourses() {
   const filtered = courses.filter(course => {
     const searchable = `${course.title} ${course.meta} ${course.source} ${course.description}`.toLowerCase();
     const matchesQuery = !query || searchable.includes(query);
-    const matchesCategory = category === "todos" || course.category === category;
+    const matchesCategory = category === "todos" || 
+      course.category === category || 
+      (category === "suporte" && course.category === "suporte") ||
+      (category === "fundamentos" && course.category === "suporte");
+
     return matchesQuery && matchesCategory;
   });
 
@@ -295,7 +376,9 @@ function leaveCoursePage(useHistory = true) {
     els.courseView.setAttribute("aria-hidden", "true");
     els.courseView.classList.remove("page-fade-out");
     document.querySelector(".site-shell").hidden = false;
-    document.body.classList.remove("course-open");
+    
+    // Libera a rolagem do site principal
+    resetScrollState();
 
     const shell = document.querySelector(".site-shell");
     shell.classList.remove("page-fade-in");
@@ -305,6 +388,87 @@ function leaveCoursePage(useHistory = true) {
 
   if (useHistory) history.replaceState(null, "", "#cursos");
   window.scrollTo({ top: 0, behavior: "auto" });
+}
+
+/* --- FUNÇÕES DO CURRÍCULO --- */
+
+function promptResumeAccess() {
+  els.resumeAccessModal.hidden = false;
+  document.body.classList.add("modal-open");
+}
+
+function closeResumeAccessModal() {
+  els.resumeAccessModal.hidden = true;
+  resetScrollState();
+}
+
+function enterResumePage() {
+  closeResumeAccessModal();
+  
+  els.resumeView.hidden = false;
+  els.resumeView.classList.remove("page-fade-out");
+  els.resumeView.classList.add("page-fade-in");
+  window.setTimeout(() => els.resumeView.classList.remove("page-fade-in"), 650);
+  els.resumeView.setAttribute("aria-hidden", "false");
+  
+  document.querySelector(".site-shell").hidden = true;
+  document.body.classList.add("course-open");
+  history.pushState({ page: "curriculos" }, "", "#curriculos");
+
+  els.resumeTransition.hidden = false;
+  els.resumeTransition.classList.remove("is-visible");
+  requestAnimationFrame(() => els.resumeTransition.classList.add("is-visible"));
+  window.setTimeout(() => {
+    els.resumeTransition.classList.remove("is-visible");
+    window.setTimeout(() => { els.resumeTransition.hidden = true; }, 450);
+  }, 1100);
+
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+
+function leaveResumePage(useHistory = true) {
+  els.resumeTransition.classList.remove("is-visible");
+  els.resumeView.classList.add("page-fade-out");
+
+  window.setTimeout(() => {
+    els.resumeView.hidden = true;
+    els.resumeView.setAttribute("aria-hidden", "true");
+    els.resumeView.classList.remove("page-fade-out");
+    document.querySelector(".site-shell").hidden = false;
+    
+    // Libera a rolagem do site principal
+    resetScrollState();
+
+    const shell = document.querySelector(".site-shell");
+    shell.classList.remove("page-fade-in");
+    requestAnimationFrame(() => shell.classList.add("page-fade-in"));
+    window.setTimeout(() => shell.classList.remove("page-fade-in"), 650);
+  }, 320);
+
+  if (useHistory) history.replaceState(null, "", "#cursos");
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+
+function openResumePreview(resumeKey) {
+  const data = resumesData[resumeKey];
+  if (!data) return;
+
+  els.resumePreviewTitle.textContent = data.title;
+  els.resumePreviewTag.textContent = data.tag;
+  els.resumePreviewUsage.textContent = data.usage;
+  els.resumePreviewSheet.innerHTML = data.previewHtml;
+  els.resumePreviewFeatures.innerHTML = data.features.map(f => `<li>${f}</li>`).join("");
+  els.resumeDownloadBtn.href = data.file;
+
+  els.resumePreviewModal.hidden = false;
+  document.body.classList.add("modal-open");
+}
+
+function closeResumePreviewModal() {
+  els.resumePreviewModal.hidden = true;
+  if (els.resumeView.hidden) {
+    resetScrollState();
+  }
 }
 
 function updateStars(rating) {
@@ -370,7 +534,7 @@ function closeModal() {
     els.modal.hidden = true;
     els.modal.classList.remove("is-closing");
     els.modal.dataset.closing = "false";
-    document.body.classList.remove("modal-open");
+    resetScrollState();
   }, 220);
 }
 
@@ -412,20 +576,6 @@ function showCommunity() {
       "A comunidade será liberada assim que a estrutura estiver pronta."
     ],
     '<i class="fa-solid fa-people-group"></i>'
-  );
-}
-
-function showResumeComingSoon() {
-  resetInfoModal();
-  openInfoModal(
-    "Turbine o seu Currículo",
-    "Ainda estamos trabalhando nesta página para entregar uma experiência completa, organizada e realmente útil para você fortalecer o seu currículo na área de tecnologia.",
-    [
-      "Conteúdos e orientações para currículo tech.",
-      "Materiais pensados para apoiar sua entrada no mercado de tecnologia."
-    ],
-    '<i class="fa-solid fa-file-lines"></i>',
-    "Em breve"
   );
 }
 
@@ -571,7 +721,7 @@ function closeProfileModal() {
     els.profileModal.hidden = true;
     els.profileModal.classList.remove("is-closing");
     els.profileModal.dataset.closing = "false";
-    document.body.classList.remove("modal-open");
+    resetScrollState();
   }, 220);
 }
 
@@ -589,9 +739,14 @@ function setTheme(theme) {
   const isLight = theme === "light";
   els.themeIcon.className = isLight ? "fa-solid fa-sun" : "fa-solid fa-moon";
   els.theme.setAttribute("aria-label", isLight ? "Ativar modo escuro" : "Ativar modo claro");
+  
   if (els.courseThemeIcon) {
     els.courseThemeIcon.className = isLight ? "fa-solid fa-sun" : "fa-solid fa-moon";
     els.courseTheme.setAttribute("aria-label", isLight ? "Ativar modo escuro" : "Ativar modo claro");
+  }
+  if (els.resumeThemeIcon) {
+    els.resumeThemeIcon.className = isLight ? "fa-solid fa-sun" : "fa-solid fa-moon";
+    els.resumeTheme.setAttribute("aria-label", isLight ? "Ativar modo escuro" : "Ativar modo claro");
   }
 }
 
@@ -613,6 +768,7 @@ function toggleTheme() {
 
 els.theme.addEventListener("click", toggleTheme);
 els.courseTheme.addEventListener("click", toggleTheme);
+if (els.resumeTheme) els.resumeTheme.addEventListener("click", toggleTheme);
 
 els.mobileMenu.addEventListener("click", () => {
   els.nav.classList.toggle("open");
@@ -625,17 +781,44 @@ els.courseBack.addEventListener("click", () => leaveCoursePage(true));
 els.modal.addEventListener("click", event => {
   if (event.target === els.modal) closeModal();
 });
+
+// Eventos de Currículo
+document.getElementById("resumeTrailBtn").addEventListener("click", promptResumeAccess);
+els.resumeAccessClose.addEventListener("click", closeResumeAccessModal);
+els.resumeAccessNo.addEventListener("click", closeResumeAccessModal);
+els.resumeAccessYes.addEventListener("click", enterResumePage);
+els.resumeBack.addEventListener("click", () => leaveResumePage(true));
+
+els.resumePreviewClose.addEventListener("click", closeResumePreviewModal);
+els.resumePreviewCloseBtn.addEventListener("click", closeResumePreviewModal);
+
+document.querySelectorAll(".resume-lesson-trigger").forEach(button => {
+  button.addEventListener("click", () => openResumePreview(button.dataset.resume));
+});
+
 document.addEventListener("keydown", event => {
   if (event.key !== "Escape") return;
   if (!els.profileModal.hidden) {
     closeProfileModal();
     return;
   }
+  if (!els.resumePreviewModal.hidden) {
+    closeResumePreviewModal();
+    return;
+  }
+  if (!els.resumeAccessModal.hidden) {
+    closeResumeAccessModal();
+    return;
+  }
   if (!els.modal.hidden) closeModal();
 });
 
 document.getElementById("communityBtn").addEventListener("click", showCommunity);
-document.getElementById("resumeTrailBtn").addEventListener("click", showResumeComingSoon);
+document.getElementById("coursesTrailBtn").addEventListener("click", () => {
+  document.getElementById("coursesTrailBtn").classList.add("active");
+  document.getElementById("resumeTrailBtn").classList.remove("active");
+});
+
 document.getElementById("heroCommunityBtn").addEventListener("click", showCommunity);
 document.getElementById("communityBannerBtn").addEventListener("click", showCommunity);
 document.getElementById("helpBtn").addEventListener("click", showHelp);
@@ -691,6 +874,14 @@ els.starRating.addEventListener("mouseleave", () => {
 els.reviewForm.addEventListener("submit", saveReview);
 
 window.addEventListener("popstate", () => {
+  if (window.location.hash === "#curriculos") {
+    els.resumeView.hidden = false;
+    els.resumeView.setAttribute("aria-hidden", "false");
+    document.querySelector(".site-shell").hidden = true;
+    document.body.classList.add("course-open");
+    return;
+  }
+  
   const match = window.location.hash.match(/^#curso\/(.+)$/);
   if (match) {
     const course = courses.find(item => item.id === match[1]);
@@ -707,16 +898,24 @@ window.addEventListener("popstate", () => {
       return;
     }
   }
+  
+  // Se navegou para a página inicial
   if (!els.courseView.hidden) leaveCoursePage(false);
+  if (!els.resumeView.hidden) leaveResumePage(false);
+  
+  // Garantia extra de liberação da rolagem ao usar botões do navegador
+  resetScrollState();
 });
 
 renderCourses();
 preloadTeamAvatars();
 
-// Permite abrir uma página de curso diretamente por hash sem alterar o projeto para múltiplas páginas HTML.
-const initialCourse = window.location.hash.match(/^#curso\/(.+)$/);
-if (initialCourse) {
-  const course = courses.find(item => item.id === initialCourse[1]);
-  if (course) enterCoursePage(course.id);
+if (window.location.hash === "#curriculos") {
+  enterResumePage();
+} else {
+  const initialCourse = window.location.hash.match(/^#curso\/(.+)$/);
+  if (initialCourse) {
+    const course = courses.find(item => item.id === initialCourse[1]);
+    if (course) enterCoursePage(course.id);
+  }
 }
-
